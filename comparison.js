@@ -27,6 +27,32 @@ function equalityTest(myVal) {
 
 // Examples
 
-// 3 ===  3  // true
-// 3 === '3' // false
+3 ===  3  // true
+3 === '3' // false
 // In the second example, 3 is a Number type and '3' is a String type.
+
+
+
+// Comparison with the Inequality Operator
+// The inequality operator (!=) is the opposite of the equality operator. It means not equal and returns false where equality would return true and vice versa. Like the equality operator, the inequality operator will convert data types of values while comparing.
+
+// Examples
+
+1 !=  2    // true
+1 != "1"   // false
+1 != '1'   // false
+1 != true  // false
+0 != false // false
+
+
+// Comparison with the Greater Than Operator
+// The greater than operator (>) compares the values of two numbers. If the number to the left is greater than the number to the right, it returns true. Otherwise, it returns false.
+
+// Like the equality operator, the greater than operator will convert data types of values while comparing.
+
+// Examples
+
+5   >  3  // true
+7   > '3' // true
+2   >  3  // false
+'1' >  9  // false
