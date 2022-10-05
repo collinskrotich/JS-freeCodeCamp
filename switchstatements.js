@@ -89,3 +89,35 @@ switchOfStuff("b");
 switchOfStuff("c");
 switchOfStuff("d");
 switchOfStuff(4);
+
+// Multiple Identical Options in Switch Statements
+// If the break statement is omitted from a switch statement's case, the following case statement(s) are executed until a break is encountered. If you have multiple inputs with the same output, you can represent them in a switch statement like this:
+
+let result = "";
+switch (val) {
+  case 1:
+  case 2:
+  case 3:
+    result = "1, 2, or 3";
+    break;
+  case 4:
+    result = "4 alone";
+}
+
+// Returning Boolean Values from Functions
+// You may recall from Comparison with the Equality Operator that all comparison operators return a boolean true or false value.
+
+// Sometimes people use an if/else statement to do a comparison, like this:
+
+function isEqual(a, b) {
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+}
+But there's a better way to do this. Since === returns true or false, we can return the result of the comparison:
+
+function isEqual(a, b) {
+  return a === b;
+}
